@@ -14,3 +14,4 @@
 -- SELECT * FROM sampledb.customers;
 -- SHOW TABLES FROM sampledb;
 -- SHOW TABLES;
+
