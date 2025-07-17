@@ -15,3 +15,10 @@
 -- SHOW TABLES FROM sampledb;
 -- SHOW TABLES;
 
+/* USE sampledb;
+Insert INTO customers (first_name, last_name, email, phone) VALUES
+('John', 'Doe', 'john.doe@example.com', '123-456-7890'),
+('Jane', 'Smith', 'jane.smith@example.com', '987-654-3210'); 
+ */
+
+--  SELECT * FROM sampledb.customers;
