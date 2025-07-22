@@ -15,13 +15,15 @@
 -- SHOW TABLES FROM sampledb;
 -- SHOW TABLES;
 
-/* USE sampledb;
-Insert INTO customers (first_name, last_name, email, phone) VALUES
-('John', 'Doe', 'john.doe@example.com', '123-456-7890'),
-('Jane', 'Smith', 'jane.smith@example.com', '987-654-3210'); 
- */
+ -- USE sampledb;
+-- Insert INTO customers (first_name, last_name, email, phone) VALUES
+-- -- ('John', 'Doe', 'john.doe@example.com', '123-456-7890'),
+-- -- ('sdfasf', 'Smith', 'jane.smith@example.com', '987-654-3210'),
+-- ('sdfsdf', 'Doe', 'jsrretere@example.com', '123-456-7890'),
+-- ('yyyy', 'Smith', 'srtrtertemith@example.com', '987-654-3210'); 
+--  
 
 --  SELECT * FROM sampledb.customers;
 
 -- DESCRIBE customers;
-SELECT * FROM customers;
+SELECT  * FROM sampledb.customers;
