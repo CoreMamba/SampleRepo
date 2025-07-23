@@ -267,3 +267,5 @@ USE sampledb;
 (110, 1078, 228, '2025-07-25', 'Inaccurate readings'),
 (111, 1082, 232, '2025-08-22', 'Installation difficulty'),
 (112, 1085, 235, '2025-09-12', 'Too small'); */
+
+SELECT * FROM sampledb.Customers;
