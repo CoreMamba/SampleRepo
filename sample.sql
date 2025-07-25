@@ -28,7 +28,7 @@
 -- DESCRIBE customers;
 -- SELECT  * FROM sampledb.customers;
 -- USE sampledb;
--- CREATE TABLE Customers (
+-- CREATE TABLE sampledb.Customers (
 --     customer_id INT PRIMARY KEY,
 --     first_name VARCHAR(50),
 --     last_name VARCHAR(50),
@@ -269,4 +269,8 @@
 (112, 1085, 235, '2025-09-12', 'Too small'); */
 
 SELECT * FROM sampledb.Customers;
+SELECT * FROM sampledb.Orders;
+SELECT * FROM sampledb.Products;
+SELECT * FROM finalsampledb.OrderDetails;
+SELECT * FROM finalsampledb.Returns;
 
