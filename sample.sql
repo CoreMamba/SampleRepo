@@ -268,9 +268,13 @@
 (111, 1082, 232, '2025-08-22', 'Installation difficulty'),
 (112, 1085, 235, '2025-09-12', 'Too small'); */
 
-SELECT * FROM sampledb.Customers;
-SELECT * FROM sampledb.Orders;
-SELECT * FROM sampledb.Products;
-SELECT * FROM finalsampledb.OrderDetails;
-SELECT * FROM finalsampledb.Returns;
+-- SELECT * FROM sampledb.Customers;
+-- SELECT * FROM sampledb.Orders;
+-- SELECT * FROM sampledb.Products;
+-- SELECT * FROM finalsampledb.OrderDetails;
+-- SELECT * FROM finalsampledb.Returns;
 
+
+/* RENAME TABLE sampledb.Customers TO sampledb.customer_info;
+SHOW TABLES FROM sampledb;
+ */
