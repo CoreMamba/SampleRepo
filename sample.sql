@@ -275,6 +275,12 @@
 -- SELECT * FROM finalsampledb.Returns;
 
 
-/* RENAME TABLE sampledb.Customers TO sampledb.customer_info;
-SHOW TABLES FROM sampledb;
- */
+-- RENAME TABLE sampledb.Customers TO sampledb.customer_info;
+-- RENAME TABLE sampledb.Products TO sampledb.product_info;
+-- RENAME TABLE sampledb.Orders TO sampledb.order_info;
+-- RENAME TABLE finalsampledb.OrderDetails TO finalsampledb.order_details;
+-- RENAME TABLE finalsampledb.Returns TO finalsampledb.return_info;
+-- SHOW TABLES FROM sampledb;
+
+
+
