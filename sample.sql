@@ -282,5 +282,20 @@
 -- RENAME TABLE finalsampledb.Returns TO finalsampledb.return_info;
 -- SHOW TABLES FROM sampledb;
 
+-- These are the practice queries for the sample database.
 
+/* SELECT first_name, last_name FROM customer_info
+WHERE order_date > '2025-06-01' and total_amount > 10000.00;
+ */
 
+-- SELECT * FROM sampledb.customer_info;
+-- SELECT * FROM sampledb.product_info;
+-- SELECT * FROM sampledb.order_info;
+-- SELECT * FROM finalsampledb.order_details;
+-- SELECT * FROM finalsampledb.return_info;
+
+SELECT first_name, last_name, COUNT(order_id) AS total_orders 
+FROM sampledb.customer_info
+JOIN sampledb.order_info ON customer_info.customer_id = order_info.customer_id
+GROUP BY first_name, last_name
+HAVING COUNT(order_id) > 2;
