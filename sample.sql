@@ -300,4 +300,6 @@ JOIN sampledb.order_info ON customer_info.customer_id = order_info.customer_id
 GROUP BY first_name, last_name
 HAVING COUNT(order_id) > 2;
  */
- 
+
+/* SELECT COUNT(product_name) as count_of_items
+FROM sampledb.product_info; */
