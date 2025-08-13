@@ -303,3 +303,14 @@ HAVING COUNT(order_id) > 2;
 
 /* SELECT COUNT(product_name) as count_of_items
 FROM sampledb.product_info; */
+
+-- SELECT * FROM customer_info;
+-- SHOW COLUMNS FROM customer_info;
+
+/* SELECT first_name, last_name, city 
+FROM customer_info; 
+ */
+
+
+
+SHOW DATABASES;
