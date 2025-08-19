@@ -313,4 +313,23 @@ FROM customer_info;
 
 
 
-SHOW DATABASES;
+-- SHOW DATABASES;
+-- Retrieve all customer names and their cities from customer_info.
+-- SHOW tables from sampledb;
+-- SHOW COLUMNS FROM product_info;
+-- SELECT first_name, last_name, city 
+-- FROM sampledb.customer_info;
+
+-- Display order IDs and order dates for orders placed in January 2025.
+-- SHOW COLUMNS FROM sampledb.order_info;
+-- SELECT order_id, order_date
+-- FROM sampledb.order_info 
+-- WHERE order_date BETWEEN "2025-01-01" AND "2025-01-31";
+-- WHERE YEAR(order_date) = 2025 AND MONTH(order_date) = 1;
+
+-- List product names, prices, and quantities for all items in finalsampledb.order_details.
+/* SELECT pi.product_name, od.product_id, od.price_each, od.quantity
+FROM finalsampledb.order_details AS od
+JOIN sampledb.product_info AS pi ON od.product_id = pi.product_id; */
+
+-- SELECT DISTINCT City FROM sampledb.customer_info;
