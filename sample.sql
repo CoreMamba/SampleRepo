@@ -6,7 +6,7 @@
 --     first_name VARCHAR(50) NOT NULL,
 --     last_name VARCHAR(50) NOT NULL,
 --     email VARCHAR(100) NOT NULL UNIQUE,
---     phone VARCHAR(15),
+--     phone VARCHAR(15),                       
 --     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 -- );
 
@@ -325,6 +325,9 @@ FROM customer_info;
 -- SELECT order_id, order_date
 -- FROM sampledb.order_info 
 -- WHERE order_date BETWEEN "2025-01-01" AND "2025-01-31";
+
+
+
 -- WHERE YEAR(order_date) = 2025 AND MONTH(order_date) = 1;
 
 -- List product names, prices, and quantities for all items in finalsampledb.order_details.
@@ -333,3 +336,60 @@ FROM finalsampledb.order_details AS od
 JOIN sampledb.product_info AS pi ON od.product_id = pi.product_id; */
 
 -- SELECT DISTINCT City FROM sampledb.customer_info;
+
+
+-- List all products with their price from product_info.
+-- SHOW COLUMNS FROM sampledb.product_info;
+-- SHOW databases;
+-- SHOW TABLES FROM sampledb;
+-- SHOW COLUMNS FROM sampledb.customer_info;
+-- SELECT product_id, product_name, price FROM sampledb.product_info;
+-- SELECT first_name, last_name, City FROM sampledb.customer_info
+-- WHERE City = 'Delhi';
+
+-- SHOW COLUMNS FROM sampledb.order_info;
+-- SELECT order_id, total_amount 
+-- FROM sampledb.order_info;
+
+-- SHOW COLUMNS FROM finalsampledb.order_details;
+-- SELECT product_id, quantity FROM finalsampledb.order_details
+
+-- SHOW COLUMNS FROM finalsampledb.return_info;
+/* SELECT return_id, return_date
+FROM finalsampledb.return_info
+WHERE return_date BETWEEN '2025-03-01' AND '2025-03-31'; */
+
+-- -- SHOW COLUMNS FROM sampledb.order_details;
+-- SELECT detail_id, order_id, product_id, price_each
+-- FROM sampledb.order_details
+-- WHERE price_each > 1000
+-- ORDER BY price_each ASC;
+
+
+-- SHOW DATABASES;
+-- USE sampledb;
+-- SHOW TABLES;
+-- SHOW COLUMNS FROM customer_info;
+
+CREATE DATABASE IF NOT EXISTS analyticsdb;
+
+USE analyticsdb;
+CREATE TABLE IF NOT EXISTS analyticsdb.customer_summary (
+    customer_id INT PRIMARY KEY,
+    total_orders INT,
+    total_amount_spend DECIMAL(10,2),
+    last_order_date DATE
+);
+
+SHOW COLUMNS FROM customer_summary;
+
+ALTER TABLE customer_summary
+ADD COLUMN customer_name VARCHAR(100) AFTER customer_id,
+ADD COLUMN customer_names VARCHAR(100) AFTER customer_name;
+
+-- SELECT * FROM analyticsdb.customer_summary;
+
+ALTER TABLE analyticsdb.customer_summary
+DROP COLUMN customer_names;
+
+-- DROP DATABASE IF ExISTS analyticsdb;
