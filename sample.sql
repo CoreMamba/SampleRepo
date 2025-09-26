@@ -371,25 +371,25 @@ WHERE return_date BETWEEN '2025-03-01' AND '2025-03-31'; */
 -- SHOW TABLES;
 -- SHOW COLUMNS FROM customer_info;
 
-CREATE DATABASE IF NOT EXISTS analyticsdb;
+-- CREATE DATABASE IF NOT EXISTS analyticsdb;
 
-USE analyticsdb;
-CREATE TABLE IF NOT EXISTS analyticsdb.customer_summary (
-    customer_id INT PRIMARY KEY,
-    total_orders INT,
-    total_amount_spend DECIMAL(10,2),
-    last_order_date DATE
-);
+-- USE analyticsdb;
+-- CREATE TABLE IF NOT EXISTS analyticsdb.customer_summary (
+--     customer_id INT PRIMARY KEY,
+--     total_orders INT,
+--     total_amount_spend DECIMAL(10,2),
+--     last_order_date DATE
+-- );
 
-SHOW COLUMNS FROM customer_summary;
+-- SHOW COLUMNS FROM customer_summary;
 
-ALTER TABLE customer_summary
-ADD COLUMN customer_name VARCHAR(100) AFTER customer_id,
-ADD COLUMN customer_names VARCHAR(100) AFTER customer_name;
+-- ALTER TABLE customer_summary
+-- ADD COLUMN customer_name VARCHAR(100) AFTER customer_id,
+-- ADD COLUMN customer_names VARCHAR(100) AFTER customer_name;
 
 -- SELECT * FROM analyticsdb.customer_summary;
 
-ALTER TABLE analyticsdb.customer_summary
-DROP COLUMN customer_names;
+-- ALTER TABLE analyticsdb.customer_summary
+-- DROP COLUMN customer_names;
 
--- DROP DATABASE IF ExISTS analyticsdb;
+DROP DATABASE IF ExISTS analyticsdb;
